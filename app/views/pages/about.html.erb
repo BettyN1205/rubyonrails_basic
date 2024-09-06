@@ -1,0 +1,37 @@
+<h2>about page</h2>
+
+<h3>如何添加页面：</h3>
+
+
+<ol>
+    <li>config》routes.rb设置路由 get 'about', to: 'pages#about'
+        <p>
+            *这里的pages是controller的名称
+    *get 'about'中的about是路由路径。即，浏览器中输入http://localhost:3000/about 的about，也就是下面第3步设置的页面
+    *pages#about中的#about 是控制器中的一个动作（action）。它指的是PagesController里的一个名为about的方法。也就是下面第2步设置的那个about
+        </p>
+    </li>
+    <li>app》controllers》pages_controller.rb里面设置
+<p>def about</p>
+  <p>end</p>
+    </li>
+    
+    <li>
+        app》views》pages里面新建about.html.erb
+    </li>    
+</ol>
+
+<h3>总结来说：</h3>
+<p>当用户访问http://localhost:3000/about时：
+Rails 会查看 config/routes.rb 文件，并找到匹配的路由：get 'about', to: 'pages#about'。
+它会将请求转发到pages_controller控制器中的about方法。
+about方法会执行，渲染一个对应的视图（app/views/pages/about.html.erb）。</P>
+
+ 
+    
+
+
+
+
+
+
