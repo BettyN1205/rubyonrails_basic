@@ -1,1 +1,34 @@
-Hello World! Home page
+
+
+<h1>Hello World! Home page</h1>
+
+<h2>名称匹配总结</h2>
+<ol>
+      <li>
+        controller文件名和里面类名称（pages_controller.rb 和 PagesController）：匹配<p>控制器文件的名称（pages_controller.rb）需要与类的名称（PagesController）匹配，并以 _controller.rb 结尾。</p></li>
+    <li>routes.rb中的前半部分和controller的名称（pages）匹配
+        <p>在 config/routes.rb 文件中，to: 'pages#about' 中的 pages 需要与 控制器名称 pages_controller.rb 的pages匹配</p></li>
+ 
+    <li>views的文件夹名称（pages）和controller的名称（pages）相匹配
+        <p>
+            视图文件的目录名称 app/views/pages 必须与控制器的名称（去掉 _controller 后的小写形式）一致。
+        </p></li>
+       <li>路由中的动作名称（about）和controller中的方法名称（def about）匹配<p>
+        在 config/routes.rb 文件中，to: 'pages#about' 中的 about 需要与 控制器pages_controller中的about 方法相匹配。
+    </p></li>
+    <li>
+        views的名称（about.html.erb）和controller中动作名称（about）匹配<p>视图文件的名称（about.html.erb）需要与控制器中的方法名称（def about）匹配。</p></li>
+ 
+</ol>
+
+<p></p>
+<h3>git 简明命令</h3>
+
+<h6>git init
+</h6>
+<h6>git add .
+</h6>
+<h6>git commit -m "xxxx"
+</h6>
+<h6>github creat new, copy the code</h6>
+<h6>git push</h6>
